@@ -28,7 +28,6 @@ body {
     background-color: #f5f5f5;
 }
 
-/* Navbar Styles */
 header {
     position: fixed;
     top: 0;
@@ -106,8 +105,6 @@ header {
         display: flex;
     }
 }
-
-/* Banner Styles */
 .banner {
     position: relative;
     width: 100%;
@@ -119,16 +116,19 @@ header {
     color: #ffffff;
     text-align: center;
 }
-
 .banner h1 {
     font-size: 3.5rem;
     margin-bottom: 1rem;
 }
-
 .banner p {
     font-size: 1.8rem;
 }
-
+.about h5 {
+    color: #4a5764; 
+    font-family: 'Arial', sans-serif; 
+    font-size: 1.2rem;
+    line-height: 1.8; 
+}
 .contact-Button {
     background-color: var(--accent-color);
     color: white;
@@ -148,33 +148,25 @@ header {
     background-color: #f8f9fa;
     font-size: 14px;
 }
-
-
- h1 {
-    
+ h1 {   
     font-size: 2.5rem;
     font-weight: bold;
 }
 
 .services-wrapper {
     width: 100%;
-    overflow-x: auto;
-    white-space: nowrap;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
-    scroll-snap-type: x mandatory; /* Enables scroll snap */
+    overflow: hidden;
 }
-
 .services-container {
     display: flex;
-    gap: 20px; /* Space between cards */
+    gap: 20px;
     flex-wrap: nowrap;
-    scroll-snap-type: x mandatory; /* Ensures snapping */
-    padding: 1rem; /* Add padding if needed */
+    padding: 1rem;
+    min-width: max-content;
 }
-
-.service-card {
+.card {
     flex: 0 0 calc(25% - 20px); 
+    overflow: hidden;
     min-width: 320px;
     max-width: 400px;
     background: white;
@@ -182,30 +174,28 @@ header {
     border-radius: 15px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    scroll-snap-align: start; /* Ensures individual card alignment */
+    
+}.card .card-text {
+    overflow-y: auto;
+    max-height: 150px; /* Adjust this to limit the text box height */
 }
 
 .services-container::-webkit-scrollbar {
-    display: none; /* Hide the scrollbar */
+    display: block;
+    height: 8px; 
+}
+#Services {
+    background-color: #f8f9fa;
+    font-size: 14px;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 2rem 0; 
+}
+.services-wrapper {
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width:thin;
 }
 
-/* Buttons for scrolling */
-.scroll-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 100;
-}
-
-.left-btn { left: 0; }
-.right-btn { right: 0; }
-
-/* Icons */
 .service-card i {
     font-size: 50px;
     margin-bottom: 15px;
@@ -216,13 +206,13 @@ header {
     transition: transform 0.3s ease;
    
 }
-
+.card-body {
+    max-height: 100%;
+}
 .card:hover {
     transform: translateY(-5px);
 }
 
-
-/* Footer Styles */
 footer {
     background-color: var(--primary-color);
     color: white;

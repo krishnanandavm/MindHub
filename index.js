@@ -20,13 +20,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Smooth scrolling for right button
-    if (rightBtn) {
-        rightBtn.addEventListener('click', function() {
-            servicesWrapper.scrollBy({
-                left: 300, // Adjust scroll amount as needed
-                behavior: 'smooth'
-            });
-        });
-    }
+    
 });
