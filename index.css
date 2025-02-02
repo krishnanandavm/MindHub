@@ -219,3 +219,79 @@ footer {
     text-align: center;
     padding: 2rem 0;
 }
+/* Increased section padding */
+#Contact {
+    padding: 40px 0;
+}
+
+/* Increased container width */
+#Contact .container {
+    max-width: 85%; /* Adjust as needed */
+}
+
+/* Larger form controls (inputs and textareas) */
+.form-control-lg {
+    padding: 10px; 
+    font-size: 1.1rem; 
+    height: 45px; 
+}
+
+/* Larger buttons */
+.btn-lg {
+    border: none;
+    width: 100px;
+    height: 38px;
+    margin: 10px;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px; /* Rounded corners for the button */
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Submit button (Primary, green theme) */
+button[type="submit"] {
+    background-color: #28a745;  
+    color: white;
+}
+button[type="submit"]:hover {
+    background-color: #218838;  
+    transform: scale(1.05);      /* Slightly enlarge button on hover */
+}
+button[type="submit"]:active {
+    background-color: #1e7e34;  
+}
+
+/* Cancel button (Secondary, blue theme) */
+button[type="reset"] {
+    border: none;
+    background-color: #2d8ef5;  
+    color: white;
+}
+button[type="reset"]:hover {
+    background-color: #0056b3;  
+    transform: scale(1.05);      
+}
+button[type="reset"]:active {
+    background-color: #004085;  
+}
+
+/* Disabled state */
+button:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+/* To make Textarea Taller */
+#message {
+    height: 100px; 
+    font-size: 1.2rem; 
+    padding: 12px;
+}
+.form-label {
+    font-size: 1.3rem; /* Increase label font size to match input fields */
+}
+#Contact h2 {
+    font-size: x-large;
+}

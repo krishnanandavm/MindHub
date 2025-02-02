@@ -185,35 +185,35 @@
         </div>
     </section>
     <!-----------------------------Contact---------------------------------->
-    <section id="Contact" class="p-3 bg-light">
-        <div class="container col-md-8 mx-auto">
+    <section id="Contact" class="p-5 bg-light"> <!-- Increased padding -->
+        <div class="container col-md-10 mx-auto"> <!-- Increased container width -->
             <h2 class="text-center mb-4">Contact Us</h2>
             <form>
                 <div class="row mb-3">
                     <div class="col-md-9">
                         <label for="name" class="form-label">Name:</label>
-                        <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+                        <input type="text" id="name" name="name" class="form-control form-control-lg" placeholder="Enter your name" required>
                     </div>
                     <div class="col-md-3">
                         <label for="age" class="form-label">Age:</label>
-                        <input type="number" id="age" name="age" class="form-control" placeholder="Enter your age" min="1" max="120" required>
+                        <input type="number" id="age" name="age" class="form-control form-control-lg" placeholder="Enter your age" min="1" max="120" required>
                     </div>
                 </div>
-                
+    
                 <div class="mb-3 col-md-6">
                     <label for="contactNumber" class="form-label">Contact Number:</label>
-                    <input type="tel" id="contactNumber" name="contactNumber" class="form-control"
-                    pattern="^\+?[0-9\s\-]{9,15}$"
-                    title="Enter a valid phone number (9-15 digits, with optional + and spaces)"
-                    required>
+                    <input type="tel" id="contactNumber" name="contactNumber" placeholder="Your mobile number" class="form-control form-control-lg"
+                        pattern="^\+?[0-9\s\-]{9,15}$"
+                        title="Enter a valid phone number (9-15 digits, with optional + and spaces)"
+                        required>
                 </div>
                 <div class="mb-3 col-md-6">
                     <label for="message" class="form-label">Message:</label>
-                    <textarea id="message" name="message" class="form-control " rows="4" placeholder="Write your message here"></textarea>
+                    <textarea id="message" name="message" class="form-control form-control-lg" rows="4" placeholder="Write your message here"></textarea>
                 </div>
                 <div class="d-flex ml-5 p4">
-                    <button type="reset" class="btn btn-danger">Cancel</button>
-                    <button type="submit" class="btn btn-success  ml-6">Submit</button>
+                    <button type="reset" class="btn btn-danger btn-lg">Cancel</button>
+                    <button type="submit" class="btn btn-success btn-lg ml-6">Submit</button>
                 </div>
             </form>
         </div>
