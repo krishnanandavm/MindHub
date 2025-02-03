@@ -339,3 +339,23 @@ footer {
     color: white;
     text-align: center;
 }
+
+
+/*responsive service section*/
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem; /* Adjust spacing */
+    overflow-x: auto; 
+    padding-bottom: 10px; /* Avoids cutting off last card */
+}
+
+.card {
+    flex: 1 1 300px; /* Keeps card width consistent */
+    min-width: 280px; /* Prevents too small cards on mobile */
+    max-width: 320px; /* Ensures uniformity */
+}
+
+
