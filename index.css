@@ -106,6 +106,16 @@ header {
         display: flex;
     }
 }
+.navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white; /* Ensure it has a solid background */
+    z-index: 1050; /* Higher than other elements */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for clarity */
+}
+
 .banner {
     position: relative;
     width: 100%;
