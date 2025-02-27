@@ -19,7 +19,7 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
-    scroll-padding-top: 6rem;
+    scroll-padding-top:15rem;
 }
 
 body {
@@ -111,9 +111,9 @@ header {
     top: 100%;
     left: 0;
     width: 100%;
-    background: white; /* Ensure it has a solid background */
-    z-index: 1050; /* Higher than other elements */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for clarity */
+    background: white;
+    z-index: 1050; 
+    
 }
 
 .banner {
@@ -188,7 +188,7 @@ header {
     border-radius: 15px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;/*changes from here*/
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -196,7 +196,7 @@ header {
     
 }.card .card-text {
     overflow-y: visible; 
-    max-height: none; /* Adjust this to limit the text box height changed 150px to none */
+    max-height: none;
     font-size: 1.3rem;
     color: #7f8c8d;
     line-height: 1.6;
@@ -217,10 +217,9 @@ header {
 #Service::-webkit-scrollbar{
     display: none;
 }
-/*new adding*/
 #service {
     -webkit-overflow-scrolling: touch;
-    scrollbar-width: none; /* Firefox */
+    scrollbar-width: none; 
 }
 
 .services-wrapper {
@@ -260,31 +259,30 @@ header {
 .card-body i {
     font-size: 3rem;
     margin-bottom: 20px;
-    color: #e74c3c; /* Adds a red color to the icon */
+    color: #e74c3c;
 }
-/* Optional: Add a background hover effect */
+
 .card:hover .card-body {
     background: #f1f1f1;
 }
 
-/* Increased section padding */
+
 #Contact {
     padding: 40px 0;
 }
 
-/* Increased container width */
 #Contact .container {
-    max-width: 85%; /* Adjust as needed */
+    max-width: 85%;
 }
 
-/* Larger form controls (inputs and textareas) */
+
 .form-control-lg {
     padding: 10px; 
     font-size: 1.1rem; 
     height: 45px; 
 }
 
-/* Larger buttons */
+
 .btn-lg {
     border: none;
     width: 100px;
@@ -293,24 +291,22 @@ header {
     padding: 12px 20px;
     font-size: 1.2rem;
     font-weight: bold;
-    border-radius: 5px; /* Rounded corners for the button */
+    border-radius: 5px; 
     transition: background-color 0.3s, transform 0.2s;
 }
 
-/* Submit button (Primary, green theme) */
 button[type="submit"] {
     background-color: #28a745;  
     color: white;
 }
 button[type="submit"]:hover {
     background-color: #218838;  
-    transform: scale(1.05);      /* Slightly enlarge button on hover */
+    transform: scale(1.05);      
 }
 button[type="submit"]:active {
     background-color: #1e7e34;  
 }
 
-/* Cancel button (Secondary, blue theme) */
 button[type="reset"] {
     border: none;
     background-color: #2d8ef5;  
@@ -324,21 +320,20 @@ button[type="reset"]:active {
     background-color: #004085;  
 }
 
-/* Disabled state */
+
 button:disabled {
     background-color: #ccc;
     color: #666;
     cursor: not-allowed;
 }
 
-/* To make Textarea Taller */
 #message {
     height: 100px; 
     font-size: 1.2rem; 
     padding: 12px;
 }
 .form-label {
-    font-size: 1.3rem; /* Increase label font size to match input fields */
+    font-size: 1.3rem;
 }
 #Contact h2 {
     font-size: x-large;
@@ -351,21 +346,21 @@ footer {
 }
 
 
-/*responsive service section*/
+
 
 .services-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem; /* Adjust spacing */
+    gap: 1rem; 
     overflow-x: auto; 
-    padding-bottom: 10px; /* Avoids cutting off last card */
+    padding-bottom: 10px; 
 }
 
 .card {
-    flex: 1 1 300px; /* Keeps card width consistent */
-    min-width: 280px; /* Prevents too small cards on mobile */
-    max-width: 320px; /* Ensures uniformity */
+    flex: 1 1 300px;
+    min-width: 280px;
+    max-width: 320px; 
 }
 
 
